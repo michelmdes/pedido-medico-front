@@ -1,0 +1,66 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Estados
+  </h1>
+
+</section>
+
+
+<section class="content">
+  <div class="box">
+    <div class="box-body">
+      <div class="col-xs-12 table-responsive" *ngIf="dados.length > 0">
+
+        <table class="table table-striped table-hover">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th class="text-right"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of dados">
+            <!--<td class="text-center">
+              <a (click)="emitDecreaseQty(item)" class="btn btn-sm"><i class="fa fa-minus"></i></a>
+              {{item.quantity}}
+              <a (click)="emitIncreaseQty(item)" class="btn btn-sm"><i class="fa fa-plus"></i></a>
+            </td>-->
+            <td>{{item.id}}</td>
+
+            <td>{{item.nome}}</td>
+            <!--<td class="text-right">{{item.value() | currency: 'BRL': true}}</td>-->
+            <td class="text-right">
+              <!--<a (click)="emitRemove(item)" class="btn btn-sm danger"><i class="fa fa-remove"></i></a>-->
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--<section class="invoice">
+    <div class="row">
+      <div class="col-xs-12">
+        Aqui uma tabela
+      </div>
+    </div>
+  </section>-->
+
+
+  <!--<div class="row">
+          <div *ngFor="let restaurant of restaurants" class="col-sm-6 col-xs-12">
+              <mt-restaurant [restaurant]="restaurant"></mt-restaurant>
+          </div>
+          <div *ngIf="restaurants?.length === 0" class="col-xs-12">
+            <p class="lead text-center">
+              Não foram encontrados itens para a sua busca.
+            </p>
+          </div>
+    </div>-->
+
+</section>
+
+<!-- FIM  do CONTEÚDO -->
