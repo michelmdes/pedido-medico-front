@@ -1,6 +1,6 @@
 # Pedido Médico - App Angular
 
-Desafio Dasa - Frontend Angular com as funcionalidades de pedido de exame.
+Frontend Angular com as funcionalidades de pedido de exame.
 
 O cadastro de paciente, medico, exame nao deu tempo de criar as telas. 
 Mas e possivel acessar documentaçao da API pedido-medico (gerada automaticamente pelo Swagger) e efetuar os cadastros desejados.
